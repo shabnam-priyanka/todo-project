@@ -1,10 +1,23 @@
-import React from 'react';
+
 import Header from '../Header/Header';
 
-const CompleteProject = () => {
+const CompleteProject = (props) => {
+    
+    const {completedItem} = props;
+  
+
     return (
         <div>
             <Header></Header>
+            {
+                completedItem.map((a) => {
+                    let anwar;
+                    if(a.isComplete === true){
+                     anwar = <li key={a.myKey} >{a.title} </li>
+                    }
+                    return anwar;
+                })
+            }
         </div>
     );
 };

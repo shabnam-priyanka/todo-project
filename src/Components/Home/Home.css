@@ -4,6 +4,9 @@
     margin: auto;
     list-style: square;
 }
+.changeColor{
+    color: red;
+}
 
 button{
     padding: 5px;
